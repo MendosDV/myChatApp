@@ -14,6 +14,8 @@ Indicateur d'activité : affiche un indicateur de saisie pour informer les utili
 
 Listes dynamiques d'utilisateurs et de salles : met à jour en temps réel la liste des utilisateurs dans une salle de discussion et la liste des salles actives.
 
+<img width="1168" alt="Capture d’écran 2023-12-19 à 22 53 50" src="https://github.com/MendosDV/myChatApp/assets/130302103/4a96964d-4410-4033-875a-8b8c7646cdfc">
+
 
 ## 👨‍💻 Technologies Utilisées :
 
