@@ -6,13 +6,13 @@ Ce projet implémente une application de chat en temps réel en utilisant la tec
 
 ## ⚙️ Fonctionnalités:
 
-Messagerie en Temps Réel : Utilise la technologie WebSocket pour permettre la messagerie instantanée entre les utilisateurs dans la même salle de discussion.
+Messagerie en temps réel : utilise la technologie WebSocket pour permettre la messagerie instantanée entre les utilisateurs dans la même salle de discussion.
 
-Interaction Utilisateur : Les utilisateurs peuvent rejoindre des salles de discussion spécifiques en fournissant leur nom et le nom de la salle souhaitée.
+Interaction utilisateur : aes utilisateurs peuvent rejoindre des salles de discussion spécifiques en fournissant leur nom et le nom de la salle souhaitée.
 
-Indicateur d'Activité : Affiche un indicateur de saisie pour informer les utilisateurs lorsqu'une personne rédige activement un message.
+Indicateur d'activité : affiche un indicateur de saisie pour informer les utilisateurs lorsqu'une personne rédige activement un message.
 
-Listes Dynamiques d'Utilisateurs et de Salles : Met à jour en temps réel la liste des utilisateurs dans une salle de discussion et la liste des salles actives.
+Listes dynamiques d'utilisateurs et de salles : met à jour en temps réel la liste des utilisateurs dans une salle de discussion et la liste des salles actives.
 
 
 ## 👨‍💻 Technologies Utilisées :
@@ -30,5 +30,5 @@ Socket.io pour la communication bidirectionnelle en temps réel.
 ## 🚀 Comment Utiliser :
 
 Clonez le dépôt.
-Exécutez le serveur avec la commande node server.js dans le terminal.
+Exécutez le serveur avec la commande node start dans le terminal.
 Ouvrez le fichier index.html dans un navigateur web.
