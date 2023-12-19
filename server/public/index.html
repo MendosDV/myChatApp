@@ -13,12 +13,6 @@
   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script defer src="app.js"></script>
 </head>
-<!-- <form class="form-join rounded mb-4">
-    <input class="rounded" type="text" id="name" maxlength="8" placeholder="Your name" size="5" required>
-    <input class="rounded" type="text" id="room" maxlength="8" placeholder="Chat room" size="5" required>
-    <button type="submit" id="join">Join</button>
-  </form> -->
-
   <body>
     <video
       id="background-video"
@@ -29,16 +23,26 @@
 
     <div class="dispo-container">
       <div class="container-perso rounded">
-        <ul class="list-message"></ul>
-        <p class="user-list"></p>
-        <p class="room-list"></p>
+
+        <form class="form-join mb-4">
+          <input type="text" id="name" class="items-form rounded" maxlength="8" placeholder="Your name" size="5" required>
+          <input type="text" id="room" class="items-form rounded" maxlength="8" placeholder="Chat room" size="5" required>
+          <button type="submit" id="join" class="rounded">Join</button>
+        </form>
+        
+        <div class="list">
+          <p class="user-list"></p>
+          <p class="room-list"></p>
+        </div>
+
+        <ul class="chat-display"></ul>
         <p class="activity"></p>
 
-        <form class="rounded">
+        <form class="form-chat rounded">
           <div class="mb-2 flex justify-between items-center gap-4">
-            <input class="shadow appearance-none border rounded-full text-sm w-full py-2 px-3 text-gray-700
+            <input class="input-form-message shadow appearance-none border rounded-full text-sm w-full py-2 px-3 text-gray-700
             leading-tight bg-stone-100 focus:outline-none focus:shadow-outline placeholder:text-xs" type="text"
-            placeholder="Write your message">
+            placeholder="Write your message" id="message">
             <button class="transition ease-in-out delay-100 py-2.5 px-2.5 rounded-full
             fa-regular fa-paper-plane hover:cursor-pointer"
             style="color: #342eab;" type="submit">

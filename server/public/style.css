@@ -90,14 +90,119 @@ body {
   width: 400px;
 }
 
-.list-message {
+.chat-display {
   max-height: 200px;
-  overflow: auto;
-  padding: 16px;
+  display: flex;
   margin-bottom: 1em;
+  flex-flow: column;
+  justify-content: left;
+  overflow: auto;
+  flex-grow: 1;
 }
 
+.activity {
+  margin-left: 14px;
+  margin-bottom: 0.5em;
+  font-size: 12px;
+  font-style: italic;
+  color: #342eab;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  font-weight: 500;
+}
 
+.form-join {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1em;
+  padding-bottom: 1em;
+  border-bottom: solid 1px rgb(52, 46, 171);
+}
+
+.items-form {
+  width: 33%;
+  background-color:  rgb(52, 46, 171);
+  font-size: 14px;
+  padding: 4px 12px;
+  color: white;
+}
+
+.items-form::placeholder {
+  font-weight: 200;
+  color: white;
+}
+
+.input-form-message {
+  color: rgb(55 65 81);
+}
+
+#join {
+  background-color: #342eab;
+  color: white;
+  padding: 4px 12px;
+}
+
+.post {
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 0 0 .25rem;
+  margin: .5rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.post--left {
+  width: 70%;
+  align-self: flex-start;
+}
+
+.post--right {
+  width: 70%;
+  align-self: flex-end;
+}
+
+.post__header {
+  color: #fff;
+  padding: .25rem .5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: .5rem;
+}
+
+.post__header--user {
+  background-color: #342eab;
+}
+
+.post__header--reply {
+  background-color: purple;
+}
+
+.post__header--name {
+  font-weight: 400;
+}
+
+.post__header--time {
+  font-size: 10px;
+}
+
+.post__text {
+  margin-top: 5px;
+  padding: .25rem .5rem;
+  font-size: 12px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.list {
+  margin-bottom: 1em;
+  color: #342eab;
+  font-size: 12px;
+  font-weight: 500;
+}
 
 /*
 1. Add the correct height in Firefox.
