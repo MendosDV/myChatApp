@@ -59,10 +59,45 @@ html {
 
 body {
   margin: 0;
-  /* 1 */
+  overflow: hidden;
+  position: absolute;
   line-height: inherit;
-  /* 2 */
 }
+
+#background-video {
+  z-index: -1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dispo-container {
+  padding: 2em;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-perso {
+  background-color: rgba(190, 199, 214, 0.601);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  width: 400px;
+}
+
+.list-message {
+  max-height: 200px;
+  overflow: auto;
+  padding: 16px;
+  margin-bottom: 1em;
+}
+
+
 
 /*
 1. Add the correct height in Firefox.
